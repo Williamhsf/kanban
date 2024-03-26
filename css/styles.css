@@ -1,0 +1,19 @@
+:root {
+  /* colors */
+  /* font-size */
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  max-width: 1200px;
+  height: 100vh;
+}
