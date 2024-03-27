@@ -23,6 +23,7 @@ body {
   max-width: 1200px;
   height: 100vh;
   background-color: var(--dark-gray-200);
+  margin: 0 auto;
 }
 
 /* RESET */
