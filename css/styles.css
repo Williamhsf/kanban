@@ -1,5 +1,11 @@
 :root {
   /* colors */
+  --light-gray-200: #DDE2E4;
+  --light-gray-500: #F6F8F9;
+  --mid-gray-200: #6E7C87;
+  --mid-gray-400: #9AA6AC;
+  --dark-gray-200: #252C32;
+
   /* font-size */
   font-size: 62.5%;
 }
@@ -16,4 +22,106 @@ body {
   width: 100%;
   max-width: 1200px;
   height: 100vh;
+  background-color: var(--dark-gray-200);
+}
+
+/* RESET */
+ul {
+  list-style-type: none;
+}
+
+/* FORM */
+#add-task-form {
+  margin: 2rem;
+}
+
+#add-task-form p {
+  font-size: 2.4rem;
+  font-weight: bolder;
+  letter-spacing: -1.9%;
+  margin-bottom: 1.6rem;
+  color: var(--light-gray-500);
+}
+
+#add-task-form input {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  border: none;
+  outline: none;
+  color: var(--mid-gray-200);
+}
+
+#add-task-form input::placeholder {
+  color: var(--mid-gray-400);
+  font-size: 1.4rem;
+}
+
+#add-task-form button {
+  font-size: 1.6rem;
+  padding: 1rem;
+  border-radius: .6rem;
+  background-color: var(--light-gray-500);
+  border: none;
+  color: var(--dark-gray-200);
+  transition: .4s;
+  margin-left: 1rem;
+}
+
+#add-task-form button:hover {
+  background-color: var(--light-gray-200);
+}
+
+/* kanban-container */
+.kanban-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 2rem;
+}
+
+.column {
+  background-color: var(--light-gray-500);
+  width: 30%;
+  min-height: 70vh;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.column h2 {
+  margin: 1.6rem 0;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--mid-gray-200);
+}
+
+.tasks {
+  margin: 0;
+  padding: 1rem;
+  border-radius: .5rem;
+  min-height: 100px;
+  background-color: #FFF;
+}
+
+.tasks li {
+  background-color: var(--light-gray-200);
+  padding: 1rem;
+  margin: 10px 0;
+  border-radius: .5rem;
+  cursor: move;
+  font-size: 1.4rem;
+}
+
+.tasks li.dragging {
+  opacity: 0.5;
+}
+
+#doing li {
+  background-color: #ECEC26;
+}
+
+#done li {
+  background-color: #1D771D;
+  color: var(--light-gray-500);
 }
